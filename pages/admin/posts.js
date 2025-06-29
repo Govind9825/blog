@@ -1,13 +1,11 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { useRouter } from "next/router"
 import Link from "next/link"
 import Layout from "../../components/Layout"
 import { formatDate } from "../../lib/utils"
 
 export default function AllPosts() {
-  const router = useRouter()
   const [posts, setPosts] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)

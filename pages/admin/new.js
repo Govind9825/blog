@@ -33,7 +33,7 @@ export default function NewPost() {
         setAuthError("Invalid secret key")
       }
     } catch (err) {
-      setAuthError("Something went wrong")
+      setAuthError("Something went wrong",err)
     }
   }
 
